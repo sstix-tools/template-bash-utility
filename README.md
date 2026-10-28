@@ -14,6 +14,8 @@ Template repository for creating POSIX / Bash shell script utilities deployed vi
 ├── packaging/
 │   ├── debian/                  # Debian package metadata
 │   └── rpm/                     # RPM spec file
+├── flake.nix                    # Nix package & app definition
+├── flake.lock                   # Nix lockfile
 ├── LICENSE
 └── README.md
 ```
@@ -24,6 +26,7 @@ Template repository for creating POSIX / Bash shell script utilities deployed vi
    - `bin/template-bash-utility` -> `bin/<your-tool>`
    - `completion/_template-bash-utility` -> `completion/_<your-tool>`
    - `packaging/rpm/template-bash-utility.spec` -> `packaging/rpm/<your-tool>.spec`
+   - In `flake.nix`: update `pname = "<your-tool>"` and description
    - In `.github/workflows/release.yaml`: update `pkg_name="<your-tool>"`
    - In `packaging/debian/control`: update `Package:` and `Description:`
 3. Implement your utility logic in `bin/<your-tool>`.
