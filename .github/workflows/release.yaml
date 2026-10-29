@@ -99,7 +99,7 @@ jobs:
           Section: utils
           Priority: optional
           Architecture: all
-          Maintainer: sstix-tools <tools@sstix.invalid>
+          Maintainer: sstix-tools <sstix@stix.foo>
           Depends: coreutils
           Description: Bash script utility template
            A utility script packaged for sstix-tools.
